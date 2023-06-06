@@ -1,12 +1,10 @@
-import { MajorButton } from "../molecules/MajorButton";
+import { MajorLeft } from "../molecules/MajorLeft";
 import { MajorList } from "../molecules/MajorList";
-import { MajorTitle } from "../molecules/MajorTitle";
 import "../styles/Major.css";
 export const Major = () => {
   return (
     <div className="Major">
-      <MajorTitle />
-      <MajorButton />
+      <MajorLeft />
       <MajorList />
     </div>
   );
