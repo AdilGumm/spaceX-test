@@ -9,27 +9,27 @@ export const HeaderMenu = () => {
   const [value, setValue] = useState<IHeaderMenuItem[]>([
     {
       title: "Главная",
-      link: ""
+      link: "/"
     },
     {
       title: "Технология",
-      link: ""
+      link: "/"
     },
     {
       title: "График полетов",
-      link: ""
+      link: "/"
     },
     {
       title: "Гарантии",
-      link: ""
+      link: "/"
     },
     {
       title: "О компании",
-      link: ""
+      link: "/"
     },
     {
       title: "Контакты",
-      link: ""
+      link: "/"
     }
   ]
   )
