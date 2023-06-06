@@ -10,20 +10,6 @@
   position: relative;
   overflow: hidden;
 }
-.App__Planet {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  z-index: 1;
-}
-.App__OnlyPlanet {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  z-index: 3;
-}
 .App__Actual {
   display: flex;
   flex-direction: column;

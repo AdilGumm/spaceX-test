@@ -4,13 +4,14 @@ import { Route, Routes } from 'react-router-dom';
 import { Major } from './pages/major/organelles/Major';
 import { Header } from './ui/header/organelles/Header';
 import DefaultBackground from './assets/major/defaultBackground.png'
-import DefaultBackgroundOnlyPlanet from './assets/major/defaultBackgroundOnlyPlanet.png'
-
+import { useState } from 'react';
+export interface IBackground {
+  image: string
+}
 function App() {
+  const [value, setValue] = useState<IBackground>({ image: DefaultBackground })
   return (
-    <div className="App">
-      <img className="App__Planet" src={DefaultBackground} alt="Background Planet" />
-      <img className="App__OnlyPlanet" src={DefaultBackgroundOnlyPlanet} alt="Background Only Planet" />
+    <div className="App" style={{ backgroundImage: `url(${value.image})` }}>
       <Header />
       <div className="App__Actual">
         <Routes>

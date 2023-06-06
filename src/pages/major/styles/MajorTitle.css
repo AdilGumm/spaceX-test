@@ -17,3 +17,11 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media (max-width: 1170px) {
+  .MajorTitle__title {
+    font-size: 48px;
+  }
+  .MajorTitle__subTitle {
+    font-size: 20px;
+  }
+}
